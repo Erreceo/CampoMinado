@@ -48,7 +48,7 @@ class Tabuleiro(val qtdeLinhas: Int, val qtdeColunas: Int, private val qtdeMinas
         var colunaSorteada = -1
         var qtdeMinasAtual = 0
 
-        while (qtdeMinasAtual > this.qtdeMinas) {
+        while (qtdeMinasAtual < this.qtdeMinas) {
             linhaSorteada = gerador.nextInt(qtdeLinhas)
             colunaSorteada = gerador.nextInt(qtdeColunas)
             val campoSorteado = campos[linhaSorteada][colunaSorteada]
